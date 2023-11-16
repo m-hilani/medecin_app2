@@ -9,7 +9,7 @@ import 'package:provider/provider.dart';
 
 
 void main() {
-  runApp(ChangeNotifierProvider(create: (context) => dProvider(),child: MedecinApp(),));
+  runApp(ChangeNotifierProvider(create: (context) => dProvider(),child:const MedecinApp(),));
 }
 class MedecinApp extends StatelessWidget {
   const MedecinApp({super.key});
@@ -17,11 +17,11 @@ class MedecinApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(routes:{
-      RegisterPage.id:(context) => RegisterPage(),
-      LogInPage.id:(context) => LogInPage(),
-      LogoPage.id:(context) => LogoPage(),
-      ProductsPage.id:(context) => ProductsPage(),
-      HomePage.id:(context) => HomePage(),
+      RegisterPage.id:(context) =>const RegisterPage(),
+      LogInPage.id:(context) =>const LogInPage(),
+      LogoPage.id:(context) =>const LogoPage(),
+      ProductsPage.id:(context) =>const ProductsPage(),
+      HomePage.id:(context) =>const HomePage(),
     } ,initialRoute://show your working screen here
      ,);
   }
