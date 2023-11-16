@@ -9,7 +9,7 @@ import 'package:provider/provider.dart';
 
 
 void main() {
-  runApp(MedecinApp());
+  runApp(ChangeNotifierProvider(create: (context) => dProvider(),child: MedecinApp(),));
 }
 class MedecinApp extends StatelessWidget {
   const MedecinApp({super.key});
