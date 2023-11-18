@@ -5,6 +5,6 @@ class LogInPage extends StatelessWidget {
   static String id="LogInPage";
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: ,);
+    return Scaffold();
   }
 }
