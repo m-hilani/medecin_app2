@@ -16,13 +16,15 @@ class MedecinApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(routes:{
+    return MaterialApp(
+        routes:{
       RegisterPage.id:(context) =>const RegisterPage(),
       LogInPage.id:(context) =>const LogInPage(),
       LogoPage.id:(context) =>const LogoPage(),
       ProductsPage.id:(context) =>const ProductsPage(),
       HomePage.id:(context) =>const HomePage(),
-    } ,initialRoute://show your working screen here
-     ,);
+    } ,
+        initialRoute: HomePage.id//show your working screen here
+     );
   }
 }

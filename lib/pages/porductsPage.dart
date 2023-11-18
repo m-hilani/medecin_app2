@@ -5,6 +5,6 @@ class ProductsPage extends StatelessWidget {
   static String id="ProductsPage";
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: ,);
+    return Scaffold();
   }
 }
