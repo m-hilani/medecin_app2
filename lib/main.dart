@@ -7,24 +7,25 @@ import 'package:medecin_app/pages/registerPage.dart';
 import 'package:medecin_app/providers/provider.dart';
 import 'package:provider/provider.dart';
 
-
 void main() {
-  runApp(ChangeNotifierProvider(create: (context) => dProvider(),child:const MedecinApp(),));
+  runApp(ChangeNotifierProvider(
+    create: (context) => dProvider(),
+    child: const MedecinApp(),
+  ));
 }
+
 class MedecinApp extends StatelessWidget {
   const MedecinApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        routes:{
-      RegisterPage.id:(context) =>const RegisterPage(),
-      LogInPage.id:(context) =>const LogInPage(),
-      LogoPage.id:(context) =>const LogoPage(),
-      ProductsPage.id:(context) =>const ProductsPage(),
-      HomePage.id:(context) =>const HomePage(),
-    } ,
-        initialRoute: HomePage.id//show your working screen here
-     );
+    return MaterialApp(routes: {
+      RegisterPage.id: (context) => const RegisterPage(),
+      LogInPage.id: (context) => const LogInPage(),
+      LogoPage.id: (context) => const LogoPage(),
+      ProductsPage.id: (context) => const ProductsPage(),
+      WelcomePage.id: (context) => const WelcomePage(),
+    }, initialRoute: WelcomePage.id //show your working screen here
+        );
   }
 }
