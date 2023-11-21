@@ -23,9 +23,9 @@ class MedecinApp extends StatelessWidget {
       RegisterPage.id: (context) => const RegisterPage(),
       LogInPage.id: (context) => const LogInPage(),
       LogoPage.id: (context) => const LogoPage(),
-      ProductsPage.id: (context) => const ProductsPage(),
-      WelcomePage.id: (context) => const WelcomePage(),
-    }, initialRoute: WelcomePage.id //show your working screen here
+      ProductsPage.id: (context) => ProductsPage(),
+      HomePage.id: (context) => const HomePage(),
+    }, initialRoute: HomePage.id //show your working screen here
         );
   }
 }
